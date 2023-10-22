@@ -2204,6 +2204,8 @@ static const luaL_reg Module_methods[] =
     {"decode", Lpb_decode},
     {"tohex", Lpb_tohex},
     {"load", Lpb_load},
+    {"types", Lpb_types},
+    {"option", Lpb_option},
     {"loadfile", Lpb_loadfile},
     {"enum", Lpb_enum},
     {0, 0}
