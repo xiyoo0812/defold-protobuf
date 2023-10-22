@@ -1,4 +1,4 @@
-local protoc = require("pb.protoc")
+local protoc = require("pb.init")
 
 function init(self)
 	-- You can also add paths
@@ -7,7 +7,7 @@ function init(self)
 	protoc:addpath("/resources/path2")
 	--]]
 
-	protoc:loadfile("resources/test.proto")
+	pb.loadfile("resources/test.pb")
 
 	local data = {
 		values = {
